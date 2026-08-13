@@ -1,0 +1,33 @@
+
+.clients {
+    overflow: hidden;
+    height: 300px;
+}
+
+.clients .section-title-line {
+    background-color: black;
+}
+
+.clients .title-container h1 {
+    color: #dc1822;
+}
+
+.clients-content {
+    position: absolute;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    height: 200px;
+    background-color: #f4f4f4;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+}
+
+.clients-content .client {
+
+}

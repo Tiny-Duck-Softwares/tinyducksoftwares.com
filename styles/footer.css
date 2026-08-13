@@ -1,0 +1,10 @@
+.footer {
+    height: 300px;
+    background-color: #ca2027;
+
+}
+
+.footer .section-container {
+    height: 100%;
+    position: relative;
+}

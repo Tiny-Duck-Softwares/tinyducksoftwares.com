@@ -1,0 +1,29 @@
+.about {
+    background-color: #dc1822;
+    padding-bottom: 50px;
+}
+
+
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* padding: 40px; */
+}
+
+.about .page-title {
+    color: white;
+}
+
+.about .section-title-line {
+    background-color: white;
+}
+
+
+#about-image {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
