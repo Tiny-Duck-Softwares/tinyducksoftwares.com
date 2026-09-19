@@ -52,7 +52,12 @@ h1 {
 .section-title-line {
     width: 35px;
     height: 2px;
+    background-color: black;
 }
+
+/* .subtitle span {
+    color: black;
+} */
 
 
 
@@ -64,10 +69,12 @@ h1 {
 
 
     padding: 30px;
-    width: 500px;
+    /* width: 500px; */
     /* height: 200px; */
 
     text-align: justify;
+    hyphens: auto;
+    text-wrap: pretty;
 
     z-index: 100;
 }

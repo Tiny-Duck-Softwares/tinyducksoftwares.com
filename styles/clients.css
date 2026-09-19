@@ -5,10 +5,14 @@
 }
 
 .clients .section-title-line {
-    background-color: black;
+    background-color: #dc1822;
 }
 
 .clients .title-container h1 {
+    color: #dc1822;
+}
+
+.clients .subtitle span {
     color: #dc1822;
 }
 

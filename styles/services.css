@@ -1,0 +1,41 @@
+
+.services {
+    /* overflow: hidden; */
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.services .section-title-line {
+    background-color: black;
+}
+
+.services .title-container h1 {
+    color: #dc1822;
+}
+
+.services .subtitle span {
+    color: black;
+}
+
+.services-content {
+    /* position: absolute; */
+    /* width: 100vw; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    margin: 0 auto;
+    height: 200px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.services-content .service {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+}

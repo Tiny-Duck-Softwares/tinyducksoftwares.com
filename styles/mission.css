@@ -1,5 +1,39 @@
 
+.mission {
+    background-color: #878787;
+}
 
 .mission .section-title-line {
-    background-color: black;
+    background-color: white;
+}
+
+.mission .subtitle span {
+    color:#fff;
+}
+
+/* invert neo-box */
+.mission .neo-box {
+    position: relative;
+    background: white;
+    border: 3px solid black;
+    box-shadow: -6px 6px 0 black;
+}
+
+.mission-content {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    gap: 50px;
+}
+
+.mission-box {
+    width: 60%;
+}
+
+.mission-box:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.mission-box:nth-child(even) {
+  align-self: flex-end;
 }

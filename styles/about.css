@@ -1,14 +1,17 @@
 .about {
     background-color: #dc1822;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 
 
-.about-content {
-    display: flex;
-    flex-direction: column;
+.about-content {    
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
     gap: 20px;
+    width: 90%;
     /* padding: 40px; */
 }
 
@@ -18,6 +21,13 @@
 
 .about .section-title-line {
     background-color: white;
+}
+
+.about-bubble {
+    height: 144px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
 }
 
 
