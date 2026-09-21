@@ -27,13 +27,17 @@
 }
 
 .mission-box {
-    width: 60%;
+    width: 46%;
 }
 
-.mission-box:nth-child(odd) {
+.mission-box:nth-child(1) {
   align-self: flex-start;
 }
 
-.mission-box:nth-child(even) {
-  align-self: flex-end;
+.mission-box:nth-child(2) {
+  left: 20%;
+}
+
+.mission-box:nth-child(3) {
+  left: 40%;
 }

@@ -1,17 +1,22 @@
 
 .navbar {
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.92);
+    backdrop-filter: blur(6px);
     color: white;
     padding: 6px 20px 6px 20px;
     /* text-align: center; */
     position: sticky;
     top: 0;
     z-index: 1000;
+    /* border-bottom: 0.2px solid rgb(189, 37, 50); */
 
 }
 
 .navbar-container {
-    width: 70vw;
+    /* width: 60vw; */
+    max-width: 1120px;
+    /* font-size: 1em; */
+    /* padding: 0px 24px; */
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -32,13 +37,30 @@
   flex: 1;
   display: flex;
   justify-content: end;
-  gap: 50px;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Contact Button */
+.navbar-center > :nth-child(4) { 
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  /* box-shadow: 4px 4px 0 #000; */
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+/* pop out the contact button */
+.navbar-center > :nth-child(4):hover {
+  transform: translate(2px, -2px);
+  box-shadow: -3px 3px 0 #000;
 }
 
 #nav-button {
     text-decoration: none;
-    font-size: 20px;
-    color:#aaa;
+    font-size: 1em;
+    color:#1b1b1b;
 }
 
 #nav-button:hover {
@@ -46,7 +68,7 @@
 
     /* text-shadow: 0 0 5px #f23, 0 0 10px #f23, 0 0 15px #f23; */
 
-    transition: color 0.3s ease-in-out;
+    transition: color 0.15s ease-in-out;
 }
 
 .navbar-right {

@@ -33,7 +33,7 @@
 
     z-index: 1;
     color: white;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     gap: -20px;
