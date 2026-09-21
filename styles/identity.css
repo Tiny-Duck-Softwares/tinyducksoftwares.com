@@ -16,7 +16,7 @@
     position: relative;
 }
 .left-item {
-    width: 6px;
+    width: 10px;
     height: 100%;
     background-color: #dc1822;
 }
@@ -32,7 +32,7 @@
 
     height: 1000px;
     right: -65%;
-    top: -10%;
+    top: -5%;
     z-index: -1;
 
     overflow: hidden;
