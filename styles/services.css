@@ -57,3 +57,12 @@
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
 }
+
+.services .subtitle span {
+    color: #dc1822;
+    
+}
+.services .subtitle .section-title-line {
+    background-color: #dc1822;
+    
+}

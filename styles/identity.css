@@ -40,10 +40,18 @@
     /* transform: translateY(-50%); */
 }
 
+/* flip horizontal and rotate logo svg */
 .right-logo img {
-    width: 1500px;
+    width: 1400px;
+
     position: relative;
 
     /* height: 1500px; */
     color: #ca2027;
+    /* transform: scaleX(-1) rotate(180deg); */
+    
+}
+
+.identity .title-container h1 {
+    color: black;
 }

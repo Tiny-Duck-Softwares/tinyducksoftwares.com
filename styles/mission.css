@@ -41,3 +41,7 @@
 .mission-box:nth-child(3) {
   left: 40%;
 }
+
+.mission .title-container h1 {
+    color: white;
+}
