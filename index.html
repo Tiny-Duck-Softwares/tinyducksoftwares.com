@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coming soon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --white: #ffffff;
+    --accent: #dc1822;
+    --line: rgba(255,255,255,0.14);
+    --dim: rgba(255,255,255,0.56);
+  }
+  :root:not([data-theme="light"]) {
+    --bg: var(--black);
+    --fg: var(--white);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: var(--black);
+      --fg: var(--white);
+    }
+  }
+  :root[data-theme="light"] { --bg: var(--black); --fg: var(--white); }
+  :root[data-theme="dark"] { --bg: var(--black); --fg: var(--white); }
+
+  * { box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: max(24px, env(safe-area-inset-top, 0px)) 24px max(24px, env(safe-area-inset-bottom, 0px));
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 460px;
+    text-align: center;
+  }
+
+  .logo-slot {
+    width: 256px;
+    height: 256px;
+    margin: 0 auto 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.5px;
+    letter-spacing: 0.02em;
+    color: var(--dim);
+    line-height: 1.4;
+  }
+
+  .status {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+  .status .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 0 rgba(220,24,34,0.5);
+    animation: pulse 2.2s ease-out infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .status .dot { animation: none; }
+  }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(220,24,34,0.45); }
+    70%  { box-shadow: 0 0 0 8px rgba(220,24,34,0); }
+    100% { box-shadow: 0 0 0 0 rgba(220,24,34,0); }
+  }
+
+  h1 {
+    font-size: clamp(28px, 6vw, 38px);
+    font-weight: 700;
+    line-height: 1.16;
+    margin: 0 0 16px;
+    letter-spacing: -0.02em;
+  }
+
+  p.sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: var(--dim);
+    max-width: 360px;
+    margin: 0 auto 36px;
+  }
+
+  .rule {
+    width: 40px;
+    height: 1px;
+    background: var(--line);
+    margin: 0 auto 32px;
+  }
+
+  .contact {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+  }
+  .contact a {
+    color: var(--fg);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2px;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .contact a:hover, .contact a:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .contact a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo-slot">
+        <img src="/assets/duck-logo.svg" alt="Tiny Duck Softwares" width="256" height="256">
+    </div>
+
+    <!-- <div class="status"><span class="dot"></span>building in progress</div> -->
+
+    <h1>Something new is<br>taking shape.</h1>
+    <p class="sub">Our site isn't ready yet, but we are working on it. Check back soon, or reach out below.</p>
+
+    <div class="rule"></div>
+
+    <p class="contact"><a href="mailto:hello@yourcompany.com">tinyducksoftwares@gmail.com</a></p>
+  </div>
+</body>
+</html>
