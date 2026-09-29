@@ -12,8 +12,8 @@
     flex-direction: row; 
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* gap: 50px; */
+    justify-content: center;
+    gap: 50px;
     width: 95%;
     /* padding: 0px 40px; */
     
@@ -45,7 +45,7 @@
 
 
 #about-image {
-    width: 400px;
+    width: 200px;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
