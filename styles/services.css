@@ -19,11 +19,30 @@
     color: black;
 }
 
-.service-title h3 {
-    padding: 0px;
+.services .neo-box {
+    height: 500px;
+    gap: 0;
+    justify-content: first baseline;
+}
 
+.service-title {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.service-title h2 {
+    height: 58px;
+    padding: 0px;
     margin: 10px 0px;
-    font-weight: bold;
+
+    /* font-weight: bold; */
+}
+.service-title h4 {
+    padding: 0px;
+    margin: 0px;
+    color: #dc1822;
+
+    font-weight: normal;
 }
 
 .services-content {
@@ -39,18 +58,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 75px;
+    gap: 10px;
 }
 
 .services-content .service {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 456px;
+    width: 300px;
+    margin-top: 10px;
 }
 
 .service-description {
-    height: 96px;
+    max-height: 96px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -65,4 +85,82 @@
 .services .subtitle .section-title-line {
     background-color: #dc1822;
     
+}
+
+.service ul {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0px 0px;
+}
+
+/* no dot for li */
+.service ul li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    padding-left: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.services ul li svg {
+    position: relative;
+    top: 2px;
+    color: #dc1822;
+    
+    width: 18px;
+    height: 18px;
+}
+
+
+.services .neo-box { 
+    box-shadow: 0px 0px 0 black;
+    
+  /* border: 2px solid black; */
+  /* border-radius: 3px; */
+  /* padding: 0.5em 1em; */
+  /* box-shadow: 4px 4px 0 #000; */
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border 0.15s ease-in-out;
+
+}
+
+.neo-box .service {
+    height: 555px;
+}
+
+
+.services .neo-box:hover {
+    border: 3px solid #dc1822;
+    /* border-top: 3px solid #dc1822;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    border-left: 3px solid #000; */
+    
+    transform: translate(2px, -2px);
+    box-shadow: -3px 3px 0 #000;
+}
+
+.service-link {
+    margin-top: 10px;
+    text-decoration: none;
+}
+.service-link-button {
+    text-decoration:none;
+    font-size: 1em;
+    background-color: #dc1822;
+    color:#fff;
+    /* border-radius: 3px; */
+    text-align: center;
+
+    padding: 12px 15px;
+    /* border: 2px solid black; */
+}
+.service-link-button:hover {
+    filter: brightness(0.9);
+
+    transition: filter 0.15s ease-in-out;
+}
+.service-link-button span {
+    text-decoration:none;
 }
