@@ -8,15 +8,15 @@
 
 .about-content {    
     margin: 0 auto;
+    margin-top: 10px;
     display: flex; 
     flex-direction: row; 
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    width: 95%;
+    justify-content: space-between;
+    gap: 100px;
+    width: 100%;
     /* padding: 0px 40px; */
-    
 }
 
 .about .page-title {
@@ -44,6 +44,8 @@
 }
 
 
+
+
 #about-image {
     width: 200px;
     height: auto;
@@ -59,5 +61,42 @@
     color: #000;
 }
 .about .subtitle .section-title-line {
+    background-color: #000;
+}
+
+.about-process {
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.process-step {
+    width: 300px;
+    /* height: 300px; */
+    /* border: 3px solid #000; */
+    /* background-color: #fff; */
+    padding: 20px 20px;
+    text-align: left;
+
+}
+
+.about-process .title-container {
+    max-width: 260px;
+}
+
+
+.process-step:first-child {
+    padding-left: 0px;
+}
+.process-step:last-child {
+    padding-right: 0px;
+}
+
+.vline {
+    width: 2px;
+    /* height: 300px; */
+
     background-color: #000;
 }

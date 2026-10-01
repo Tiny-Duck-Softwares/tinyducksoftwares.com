@@ -1,6 +1,7 @@
 
 .mission {
-    background-color: #878787;
+    /* background-color: #878787; */
+    background-color: #dc1822;
 }
 
 .mission .section-title-line {
@@ -28,6 +29,7 @@
 
 .mission-box {
     width: 46%;
+    height: 130px;
 }
 
 .mission-box:nth-child(1) {

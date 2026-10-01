@@ -61,6 +61,11 @@
     gap: 10px;
 }
 
+#services-polygon {
+    position: absolute;
+    width: 1800px;
+}
+
 .services-content .service {
     display: flex;
     flex-direction: column;
