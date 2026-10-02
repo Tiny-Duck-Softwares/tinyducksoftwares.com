@@ -20,13 +20,13 @@
 }
 
 .services .neo-box {
-    height: 500px;
+    /* height: 460px; */
     gap: 0;
     justify-content: first baseline;
 }
 
 .service-title {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     text-align: left;
 }
 
@@ -53,12 +53,10 @@
     margin: 0 auto;
     /* height: 200px; */
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     align-items: center;
-    gap: 10px;
 }
 
 #services-polygon {

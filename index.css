@@ -11,6 +11,12 @@ body {
     background-color: whitesmoke;
 }
 
+.back-img {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
 .section {
     padding-top: 88px;
     padding-bottom: 88px;
