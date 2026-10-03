@@ -21,6 +21,11 @@
     background-color: #dc1822;
 }
 
+.right-item {
+    border-left: 2px solid #dc1822;
+    padding-left: 20px;
+}
+
 .right-item p {
     font-size: 18px;
     text-align: justify;
@@ -29,6 +34,7 @@
 .right-logo {
     position: absolute;
     width: 1500px;
+    
 
     height: 1000px;
     right: -65%;

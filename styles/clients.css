@@ -36,3 +36,153 @@
 .clients-content .client {
 
 }
+
+
+/* CLAUDIO */
+
+.work {
+    /* Tweak these to match your site */
+    --work-bg: #f4f4f4;          /* same as your parent background */
+    --work-highlight: #e6e6e6;   /* hover colour for row + detail panel */
+    --work-accent: #e01b24;
+    --work-line: #777;
+    --work-list-width: 600px;
+    --work-panel-width: 520px;
+
+    background: var(--work-bg);
+    padding: 24px 12px 48px;
+  }
+
+  /* Heading (matches your current look; delete if you already style these) */
+  .work-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 8px;
+    font-family: ui-monospace, monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--work-accent);
+  }
+  .work-eyebrow::before {
+    content: "";
+    width: 36px;
+    height: 2px;
+    background: var(--work-accent);
+  }
+  .work-heading {
+    margin: 0 0 28px;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--work-accent);
+  }
+
+  /* The list. It is the positioning parent for every detail panel. */
+  .work-list {
+    position: relative;
+    max-width: var(--work-list-width);
+    min-height: 400px; /* reserves room so the panel never spills over the next section */
+  }
+
+  .project {
+    border-top: 1px solid var(--work-line);
+    background: transparent;            /* same as parent when not hovered */
+    transition: background-color 0.2s ease;
+  }
+
+  .project-title {
+    margin: 0;
+    padding: 28px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+    transition: padding-left 0.2s ease, color 0.2s ease;
+  }
+
+  /* Hover (and keyboard focus) highlights the row */
+  .project:hover,
+  .project:focus-within {
+    background: var(--work-highlight);
+  }
+  .project:hover .project-title,
+  .project:focus-within .project-title {
+    padding-left: 20px;
+    color: var(--work-accent);
+  }
+
+  /* Detail panel: sits flush against the right edge of the list so the
+     highlighted row and the panel read as one connected shape */
+  .project-detail {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: var(--work-panel-width);
+    min-height: 100%;
+    /* max-height: 100%; */
+    box-sizing: border-box;
+    padding: 28px;
+    background: var(--work-highlight);
+    /* border-top: 1px solid var(--work-line); */
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.2s;
+  }
+  .project:hover .project-detail,
+  .project:focus-within .project-detail {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition-delay: 0s;
+  }
+
+  .project-detail img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: #cfcfcf; /* placeholder while the image loads */
+  }
+  .project-detail p {
+    margin: 20px 0 16px;
+    line-height: 1.55;
+    color: #222;
+  }
+  .project-link {
+    font-weight: 700;
+    color: var(--work-accent);
+    text-decoration: none;
+    border-bottom: 2px solid currentColor;
+  }
+  .project-link:hover,
+  .project-link:focus-visible {
+    color: #000;
+  }
+
+  /* Touch screens / small screens: no hover, so show details under each title */
+  @media (max-width: 1200px), (hover: none) {
+    .work-list { min-height: 0; }
+    .project-detail {
+      position: static;
+      width: auto;
+      min-height: 0;
+      padding: 0 0 28px;
+      background: transparent;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    }
+    .project:hover,
+    .project:focus-within { background: transparent; }
+    .project:hover .project-title,
+    .project:focus-within .project-title { padding-left: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .project, .project-title, .project-detail { transition: none; }
+  }
