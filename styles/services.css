@@ -73,7 +73,7 @@
 }
 
 .service-description {
-    max-height: 96px;
+    height: 76px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -125,11 +125,11 @@
   /* padding: 0.5em 1em; */
   /* box-shadow: 4px 4px 0 #000; */
   transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border 0.15s ease-in-out;
+  height: 480px;
 
 }
 
 .neo-box .service {
-    height: 555px;
 }
 
 
@@ -167,3 +167,83 @@
 .service-link-button span {
     text-decoration:none;
 }
+
+
+/* --------------- WORK ------------- */
+
+.work-process {
+    margin-top: 88px;
+    height: 400px !important;
+    /* box-shadow: none !important; */
+    box-shadow: -3px 3px 0 #000 !important;
+    transform: none !important;
+    /* transition: none !important; */
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 40px !important;
+}
+
+
+
+.work-process:hover { 
+    border: 3px solid #000 !important;
+    
+}
+
+.work-process .title-container {
+    /* max-width: 300px; */
+    flex: 0 0 300px;
+}
+
+.work-process-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px !important;
+    text-align: justify;
+    flex: 1;
+}
+
+
+/*
+ .work-process {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 200px !important;
+    
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.work-process h1 {
+    color: #000 !important;
+}
+
+.process-step {
+    width: 300px;
+    
+    padding: 20px 20px;
+    text-align: left;
+
+}
+
+.work-process .title-container {
+    max-width: 260px;
+}
+
+
+.process-step:first-child {
+    padding-left: 0px;
+}
+.process-step:last-child {
+    padding-right: 0px;
+}
+
+.vline {
+    width: 2px;
+    
+
+    background-color: #000;
+} 
+*/
